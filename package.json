@@ -1,0 +1,6 @@
+"homepage": "https://oke-sentries.000webhostapp.com/",
+{
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}

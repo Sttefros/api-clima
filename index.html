@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body onload="onLoad()">
+
+    <div class="app" id="app">
+
+
+        <div class="container justify-content-center align-items-center contener text-center">
+
+            <div class="row  pt-5">
+
+            
+                    <div class="col h-100"> 
+					
+						<div id="description" class="fs-1"></div>
+						<img src="dots.png" alt="" id="icon">
+						
+					</div>
+					
+					<div class="col d-flex">
+							<div class="row">
+								<label class="fw-bold" for="">Humedad</label>
+								<label class="fw-bold" for="">presion</label>
+							</div>
+							
+							<div class="row">
+								<div class="fw-bold" id="humidity"></div>
+								<div class="fw-bold" id="pressure"></div>
+							</div>	
+					</div>
+						
+						
+
+						<div class="col h-100 justify-content-center align-items-center ">
+							<label class="text-uppercase fw-bold" for="" >Temperatura</label>
+							<div  id="temperature" class="fs-1"></div>
+						</div> 
+
+						<div class="col justify-content-center align-items-center">
+							<div class="fw-bold "id="hour"></div>
+							<div class="fw-bold" id="date"></div>
+						</div>
+
+						<div class="col h-100 justify-content-center align-items-center text-center">
+							<div class="row">
+								<div class="text-uppercase fw-bold" id="location"></div>
+							</div>
+							<div class="row">
+								<div class="text-uppercase justify-content-center align-items-center fw-bold" id="country"></div>
+							</div>
+							
+						</div>
+            </div>
+
+        </div>
+
+
+        <div class="container days rounded ">
+		
+            <div class="row ">
+                <div class="col d-flex text-center ">
+				
+                    <div class="cards rounded m-2 w-25 ">
+					
+                        <div class="card-body h-25 ">
+						
+                            <div class="row">
+								<h4 id="descriptions1"></h4>
+							</div>
+							
+							<div class="w-100"></div>
+							
+							<div class="row">
+								<img src="dots.png" alt="" id="icon1">
+							</div>
+							
+							<div class="row ">
+								<div class="card-text">
+									<p id="day1Min"></p>
+									<p id="day1Max"></p>
+								</div>
+							</div>
+                        </div>
+						
+                    </div>
+					
+					
+					
+                    <div class="cards rounded m-2 w-25">
+                        <div class="card-body h-25">
+						
+                            <div class="row">
+								<h4 id="descriptions2"></h4>
+							</div>
+							
+							<div class="w-100"></div>
+							
+                            <div class="row">
+								<img src="dots.png" alt="" id="icon2">
+							</div>
+							
+                            <div class="row">
+								<div class="card-text">
+									<p id="day2Min"></p>
+									<p id="day2Max"></p>
+								</div>
+							</div>
+                        </div>
+                    </div>
+					
+					
+                    <div class="cards rounded m-2 w-25">
+                        <div class="card-body h-25">
+                            <div class="row">
+								<h4 id="descriptions3"></h4>
+							</div>
+							
+							<div class="w-100"></div>
+							
+                            <div class="row">
+								<img src="dots.png" alt="" id="icon3">
+							</div>
+							
+                            <div class="row">
+								<div class="card-text">
+									<p id="day3Min"></p>
+									<p id="day3Max"></p>
+								</div>
+							</div>
+                        </div>
+                    </div>
+					
+					
+					
+                     <div class="cards rounded m-2 w-25">
+                        <div class="card-body h-25">
+                            <div class="row">
+								<h4 id="descriptions4"></h4>
+							</div>
+							
+							<div class="w-100"></div>
+							
+                            <div class="row">
+								<img src="dots.png" alt="" id="icon4">
+							</div>
+							
+                            <div class="row">
+								<div class="card-text">
+									<p id="day4Min"></p>
+									<p id="day4Max"></p>
+								</div>
+							</div>
+                        </div>
+                    </div>
+					
+					
+					
+                     <div class="cards rounded m-2 w-25">
+                        <div class="card-body h-25">
+                            <div class="row">
+								<h4 id="descriptions5"></h4>
+							</div>
+							
+							<div class="w-100"></div>
+							
+                            <div class="row">
+								<img src="dots.png" alt="" id="icon5">
+							</div>
+							
+                            <div class="row">
+								<div class="card-text">
+									<p id="day5Min"></p>
+									<p id="day5Max"></p>
+								</div>
+							</div>
+                        </div>
+                    </div>
+					
+					
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="loader" class="align-items-center">
+		<span  class="loader"></span>
+	</div>
+	
+    <script src="main.js"></script>
+</body>
+
+</html>
